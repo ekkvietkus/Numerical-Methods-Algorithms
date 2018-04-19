@@ -1,15 +1,14 @@
-
 ## Simpson.m
-This function numerically integrates y with respect to x. This function uses numerical integration *(in this case Simpson's 1/3rd rule)* to calculate the integral. In some cases it will use Simpson's 1/3rd rule alongside a single application of the trapezoidal rule, **though it will warn the user when doing so**.  
+This function numerically integrates y with respect to x. This function uses numerical integration *(in this case [Simpson's 1/3rd Rule](https://en.wikipedia.org/wiki/Simpson%27s_rule "Wikipedia page on Simpson's rule"))* to calculate the integral. In some cases it will use Simpson's 1/3rd rule alongside a single application of the trapezoidal rule, **though it will warn the user when doing so**.  
 Within MATLAB *(or Octave)* this function can be called upon using `I = Simpson(x,y)`.  
 Note: Simpson.m must be within your path *(or working directory)* for this to work.
 
 ### Inputs
-* `x` - A vector of the same size as y.
-* `y` - A vector of the same size as x.
+* `x` - A vector of the same size as `y`.
+* `y` - A vector of the same size as `x`.
 
 ### Outputs
-* `I` - The numerically calculated integral of y with respect to x.
+* `I` - The numerically calculated integral of y with respect to `x`.
 
 ### Useful Knowledge
 * The `x` vector must be evenly spaced in order for this algorithm to work. 
